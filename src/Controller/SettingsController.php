@@ -182,7 +182,7 @@ class SettingsController extends AdminController
      *
      * @throws \Exception
      */
-    public function addFolderAction(Request $request): JsonResponse
+    public function addFolderAction(Request $request, Filesystem $filesystem): JsonResponse
     {
         $this->checkPermission('fileexplorer');
 
@@ -198,7 +198,7 @@ class SettingsController extends AdminController
             }
 
             if (is_writable(dirname($file))) {
-                File::mkdir($file);
+                $filesystem->mkdir($file);
 
                 $success = true;
             }
