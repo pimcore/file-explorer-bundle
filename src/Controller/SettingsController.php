@@ -16,7 +16,6 @@
 namespace Pimcore\Bundle\FileExplorerBundle\Controller;
 
 use Pimcore\Bundle\AdminBundle\Controller\AdminController;
-use Pimcore\File;
 use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
