@@ -6,5 +6,4 @@ parameters:
     bootstrapFiles:
         - phpstan-bootstrap.php
     excludePaths:
-        - src/Migrations/*
         - src/Tests/*
