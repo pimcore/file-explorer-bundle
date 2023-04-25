@@ -15,8 +15,8 @@
 
 namespace Pimcore\Bundle\FileExplorerBundle\Controller;
 
-use Pimcore\Controller\UserAwareController;
 use Pimcore\Controller\Traits\JsonHelperTrait;
+use Pimcore\Controller\UserAwareController;
 use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
@@ -30,6 +30,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class SettingsController extends UserAwareController
 {
     use JsonHelperTrait;
+
     /**
      * @Route("/tree", name="pimcore_bundle_file_explorer_settings_tree", methods={"GET"})
      *
