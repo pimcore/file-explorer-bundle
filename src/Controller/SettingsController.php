@@ -15,7 +15,8 @@
 
 namespace Pimcore\Bundle\FileExplorerBundle\Controller;
 
-use Pimcore\Bundle\AdminBundle\Controller\AdminController;
+use Pimcore\Controller\UserAwareController;
+use Pimcore\Controller\Traits\JsonHelperTrait;
 use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
@@ -26,8 +27,9 @@ use Symfony\Component\Routing\Annotation\Route;
  *
  * @internal
  */
-class SettingsController extends AdminController
+class SettingsController extends UserAwareController
 {
+    use JsonHelperTrait;
     /**
      * @Route("/tree", name="pimcore_bundle_file_explorer_settings_tree", methods={"GET"})
      *
@@ -74,7 +76,7 @@ class SettingsController extends AdminController
             }
         }
 
-        return $this->adminJson($contents);
+        return $this->jsonResponse($contents);
     }
 
     /**
@@ -100,7 +102,7 @@ class SettingsController extends AdminController
             }
         }
 
-        return $this->adminJson([
+        return $this->jsonResponse([
             'success' => $success,
             'content' => $content,
             'writeable' => $writeable,
@@ -131,7 +133,7 @@ class SettingsController extends AdminController
             }
         }
 
-        return $this->adminJson([
+        return $this->jsonResponse([
             'success' => $success,
         ]);
     }
@@ -167,7 +169,7 @@ class SettingsController extends AdminController
             }
         }
 
-        return $this->adminJson([
+        return $this->jsonResponse([
             'success' => $success,
         ]);
     }
@@ -203,7 +205,7 @@ class SettingsController extends AdminController
             }
         }
 
-        return $this->adminJson([
+        return $this->jsonResponse([
             'success' => $success,
         ]);
     }
@@ -228,7 +230,7 @@ class SettingsController extends AdminController
             }
         }
 
-        return $this->adminJson([
+        return $this->jsonResponse([
             'success' => $success,
         ]);
     }
@@ -252,7 +254,7 @@ class SettingsController extends AdminController
             $success = rename($file, $newFile);
         }
 
-        return $this->adminJson([
+        return $this->jsonResponse([
             'success' => $success,
         ]);
     }
