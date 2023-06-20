@@ -1,12 +1,12 @@
 ---
 pimcore_file_explorer_bundle_server_file_explorer: Server File Explorer
 pimcore_file_explorer_bundle_document_root: Document Root
-pimcore_file_explorer_bundle_new_file: New File
-pimcore_file_explorer_bundle_new_folder: New Folder
-pimcore_file_explorer_bundle_reload: Reload
-pimcore_file_explorer_bundle_delete: Delete
-pimcore_file_explorer_bundle_rename: Rename
-pimcore_file_explorer_bundle_enter_name: Enter the name of the new item
-pimcore_file_explorer_bundle_saved_file_success: File saved
-pimcore_file_explorer_bundle_saved_file_error: Cannot save file
+pimcore_file_explorer_bundle_new_file: Nouveau fichier
+pimcore_file_explorer_bundle_new_folder: Nouveau dossier
+pimcore_file_explorer_bundle_reload: Recharger
+pimcore_file_explorer_bundle_delete: Supprimer
+pimcore_file_explorer_bundle_rename: Renommer
+pimcore_file_explorer_bundle_enter_name: Saisir le nom du nouvel article
+pimcore_file_explorer_bundle_saved_file_success: "Fichier sauvegard\xE9"
+pimcore_file_explorer_bundle_saved_file_error: Impossible de sauvegarder le fichier
 ...
