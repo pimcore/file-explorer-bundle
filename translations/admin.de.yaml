@@ -1,12 +1,12 @@
 ---
-pimcore_file_explorer_bundle_server_file_explorer: Server File Explorer
-pimcore_file_explorer_bundle_document_root: Document Root
-pimcore_file_explorer_bundle_new_file: New File
-pimcore_file_explorer_bundle_new_folder: New Folder
-pimcore_file_explorer_bundle_reload: Reload
-pimcore_file_explorer_bundle_delete: Delete
-pimcore_file_explorer_bundle_rename: Rename
-pimcore_file_explorer_bundle_enter_name: Enter the name of the new item
-pimcore_file_explorer_bundle_saved_file_success: File saved
-pimcore_file_explorer_bundle_saved_file_error: Cannot save file
+pimcore_file_explorer_bundle_server_file_explorer: Server Datei Explorer
+pimcore_file_explorer_bundle_document_root: Wurzel des Dokuments
+pimcore_file_explorer_bundle_new_file: Neue Datei
+pimcore_file_explorer_bundle_new_folder: Neue Mappe
+pimcore_file_explorer_bundle_reload: Neu laden
+pimcore_file_explorer_bundle_delete: "L\xF6schen"
+pimcore_file_explorer_bundle_rename: Umbenennen
+pimcore_file_explorer_bundle_enter_name: Geben Sie den Namen des neuen Artikels ein
+pimcore_file_explorer_bundle_saved_file_success: Datei gespeichert
+pimcore_file_explorer_bundle_saved_file_error: Datei kann nicht gespeichert werden
 ...
