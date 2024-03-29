@@ -12,15 +12,16 @@ pimcore.bundle.fileexplorer.startup = Class.create({
         this.toolbar = pimcore.globalmanager.get('layout_toolbar');
         const systemInfoMenuItems = this.getSystemInfoMenu();
 
-        const filteredMenu = menu.extras.items.filter(function (item) {
-            return item.itemId === 'pimcore_menu_extras_system_info';
-        });
-
-        const systemInfoMenu = filteredMenu.shift();
-        systemInfoMenuItems.map(function(item) {
-            systemInfoMenu.menu.items.push(item);
-        });
-
+        if (menu.extras) {
+            const filteredMenu = menu.extras.items.filter(function (item) {
+                return item.itemId === 'pimcore_menu_extras_system_info';
+            });
+    
+            const systemInfoMenu = filteredMenu.shift();
+            systemInfoMenuItems.map(function(item) {
+                systemInfoMenu.menu.items.push(item);
+            });
+        }
     },
 
     getSystemInfoMenu: function () {
