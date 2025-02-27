@@ -15,8 +15,8 @@
 
 namespace Pimcore\Bundle\FileExplorerBundle;
 
-use Pimcore\Bundle\FileExplorerBundle\DependencyInjection\PimcoreFileExplorerExtension;
 use function dirname;
+use Pimcore\Bundle\FileExplorerBundle\DependencyInjection\PimcoreFileExplorerExtension;
 use Pimcore\Extension\Bundle\AbstractPimcoreBundle;
 use Pimcore\Extension\Bundle\PimcoreBundleAdminClassicInterface;
 use Pimcore\Extension\Bundle\Traits\BundleAdminClassicTrait;
