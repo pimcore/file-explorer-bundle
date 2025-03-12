@@ -20,24 +20,22 @@ use Pimcore\Controller\UserAwareController;
 use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\Routing\Attribute\Route;
 
 /**
- * @Route("/settings")
- *
  * @internal
  */
+#[Route('/settings')]
 class SettingsController extends UserAwareController
 {
     use JsonHelperTrait;
 
     /**
-     * @Route("/tree", name="pimcore_bundle_file_explorer_settings_tree", methods={"GET"})
-     *
      * @param Request $request
      *
      * @return JsonResponse
      */
+    #[Route('/tree', name: 'pimcore_bundle_file_explorer_settings_tree', methods: ['GET'])]
     public function treeAction(Request $request): JsonResponse
     {
         $this->checkPermission('fileexplorer');
@@ -81,12 +79,11 @@ class SettingsController extends UserAwareController
     }
 
     /**
-     * @Route("/content", name="pimcore_bundle_file_explorer_settings_content", methods={"GET"})
-     *
      * @param Request $request
      *
      * @return JsonResponse
      */
+    #[Route('/content', name: 'pimcore_bundle_file_explorer_settings_content', methods: ['GET'])]
     public function contentAction(Request $request): JsonResponse
     {
         $this->checkPermission('fileexplorer');
@@ -113,12 +110,11 @@ class SettingsController extends UserAwareController
     }
 
     /**
-     * @Route("/content-save", name="pimcore_bundle_file_explorer_settings_contentsave", methods={"PUT"})
-     *
      * @param Request $request
      *
      * @return JsonResponse
      */
+    #[Route('/content-save', name: 'pimcore_bundle_file_explorer_settings_contentsave', methods: ['PUT'])]
     public function contentSaveAction(Request $request, Filesystem $filesystem): JsonResponse
     {
         $this->checkPermission('fileexplorer');
@@ -140,14 +136,13 @@ class SettingsController extends UserAwareController
     }
 
     /**
-     * @Route("/add", name="pimcore_bundle_file_explorer_settings_add", methods={"POST"})
-     *
      * @param Request $request
      *
      * @return JsonResponse
      *
      * @throws \Exception
      */
+    #[Route('/add', name: 'pimcore_bundle_file_explorer_settings_add', methods: ['POST'])]
     public function addAction(Request $request, Filesystem $filesystem): JsonResponse
     {
         $this->checkPermission('fileexplorer');
@@ -176,14 +171,13 @@ class SettingsController extends UserAwareController
     }
 
     /**
-     * @Route("/add-folder", name="pimcore_bundle_file_explorer_settings_addfolder", methods={"POST"})
-     *
      * @param Request $request
      *
      * @return JsonResponse
      *
      * @throws \Exception
      */
+    #[Route('/add-folder', name: 'pimcore_bundle_file_explorer_settings_addfolder', methods: ['POST'])]
     public function addFolderAction(Request $request, Filesystem $filesystem): JsonResponse
     {
         $this->checkPermission('fileexplorer');
@@ -212,12 +206,11 @@ class SettingsController extends UserAwareController
     }
 
     /**
-     * @Route("/delete", name="pimcore_bundle_file_explorer_settings_delete", methods={"DELETE"})
-     *
      * @param Request $request
      *
      * @return JsonResponse
      */
+    #[Route('/delete', name: 'pimcore_bundle_file_explorer_settings_delete', methods: ['DELETE'])]
     public function deleteAction(Request $request): JsonResponse
     {
         $this->checkPermission('fileexplorer');
@@ -237,12 +230,11 @@ class SettingsController extends UserAwareController
     }
 
     /**
-     * @Route("/rename", name="pimcore_bundle_file_explorer_settings_rename", methods={"PUT"})
-     *
      * @param Request $request
      *
      * @return JsonResponse
      */
+    #[Route('/rename', name: 'pimcore_bundle_file_explorer_settings_rename', methods: ['PUT'])]
     public function renameAction(Request $request): JsonResponse
     {
         $this->checkPermission('fileexplorer');
