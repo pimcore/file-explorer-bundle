@@ -9,8 +9,8 @@
   "prefer-stable": true,
   "minimum-stability": "dev",
   "require": {
-    "php": "~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0",
-    "pimcore/pimcore": "^11.0 || dev-dbal-v4-support"
+    "php": "~8.3.0 || ~8.4.0",
+    "pimcore/pimcore": "^dev-dbal-v4-support"
   },
   "require-dev": {
     "phpstan/phpstan": "^1.2"
