@@ -19,7 +19,7 @@ pimcore.bundle.fileexplorer.startup = Class.create({
             permissions[context][menu].indexOf('items.systemtools.items.fileexplorer') === -1) {
             permissions[context][menu].push('items.systemtools.items.fileexplorer');
         }
-    }
+    },
 
     preMenuBuild: function (event) {
         const menu = event.detail.menu;
