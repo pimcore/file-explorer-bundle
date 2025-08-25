@@ -1,6 +1,6 @@
 {
   "name": "pimcore/file-explorer-bundle",
-  "license": "GPL-3.0+",
+  "license": "proprietary",
   "type": "pimcore-bundle",
   "description": "Pimcore File Explorer Bundle allows to read/write files on the server from within the Pimcore admin interface.",
   "config": {

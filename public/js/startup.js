@@ -3,7 +3,25 @@ pimcore.registerNS("pimcore.bundle.fileexplorer.startup");
 pimcore.bundle.fileexplorer.startup = Class.create({
 
     initialize: function () {
+        document.addEventListener(pimcore.events.pimcoreReady, this.onPimcoreReady.bind(this));
         document.addEventListener(pimcore.events.preMenuBuild, this.preMenuBuild.bind(this));
+    },
+
+    onPimcoreReady: function (e){
+        if (pimcore.events.onPerspectiveEditorLoadPermissions) {
+            document.addEventListener(pimcore.events.onPerspectiveEditorLoadPermissions, this.onPerspectiveEditorLoadPermissions.bind(this));
+        }
+    },
+
+    onPerspectiveEditorLoadPermissions: function (e) {
+        let context = e.detail.context;
+        let menu = e.detail.menu;
+        let permissions = e.detail.permissions;
+
+        if(context === 'toolbar' && menu === 'extras' &&
+            permissions[context][menu].indexOf('items.systemtools.items.fileexplorer') === -1) {
+            permissions[context][menu].push('items.systemtools.items.fileexplorer');
+        }
     },
 
     preMenuBuild: function (event) {
