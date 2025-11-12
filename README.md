@@ -4,6 +4,9 @@ This bundle won't be migrated to Pimcore Studio and therefore will be deprecated
 
 # Pimcore File Explorer
 
+> [!WARNING]
+> This bundle won't be migrated to Pimcore Studio and therefore will be deprecated with 2.2.
+
 This bundle enables the admin user to read/write pimcore system files directly from the Pimcore Admin UI.
 
 ## Accessing the File Explorer
