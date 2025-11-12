@@ -33,7 +33,7 @@ class PimcoreFileExplorerBundle extends AbstractPimcoreBundle implements Pimcore
         trigger_deprecation(
             'pimcore/file-explorer-bundle',
             '2.2',
-            'The PimcoreFileExplorerBundle is deprecated and will be removed.'
+            'The PimcoreFileExplorerBundle is deprecated and will be discontinued with Pimcore Studio.'
         );
     }
 
