@@ -1,6 +1,6 @@
 # Bundle Deprecation
 
-This bundle won't be migrated to Pimcore Studio and therefore will be deprecated with 2.1
+This bundle won't be migrated to Pimcore Studio and therefore will be deprecated with 2.2
 
 # Pimcore File Explorer
 

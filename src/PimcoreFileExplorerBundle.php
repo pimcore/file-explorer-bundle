@@ -21,7 +21,7 @@ use Pimcore\Extension\Bundle\Traits\PackageVersionTrait;
 use Symfony\Component\DependencyInjection\Extension\ExtensionInterface;
 
 /**
- * @deprecated version 2.1
+ * @deprecated version 2.2
  */
 class PimcoreFileExplorerBundle extends AbstractPimcoreBundle implements PimcoreBundleAdminClassicInterface
 {
@@ -32,7 +32,7 @@ class PimcoreFileExplorerBundle extends AbstractPimcoreBundle implements Pimcore
     {
         trigger_deprecation(
             'pimcore/file-explorer-bundle',
-            '2.1',
+            '2.2',
             'The PimcoreFileExplorerBundle is deprecated and will be removed.'
         );
     }
