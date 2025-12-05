@@ -21,6 +21,9 @@
     }
   },
   "extra": {
+    "branch-alias": {
+      "dev-2.x": "2.2.x-dev"
+    },
     "pimcore": {
       "bundles": [
         "Pimcore\\Bundle\\FileExplorerBundle\\PimcoreFileExplorerBundle"
